@@ -29,4 +29,11 @@ public class ArrayMergeTest {
         int[] unsortedArrs = {6,4,3,5,1,2};
         assertArrayEquals(sortedArrs, ArrayMerge.sortDescending(unsortedArrs));
     }
+    
+    @Test
+    public void removeDuplicateTest(){
+        int[] duplicatedArrs = {6,4,4,3,0,5,2,3,5,1,2};
+        int[] unduplicatedArrs = {6,4,3,0,5,2,1};
+        assertArrayEquals(unduplicatedArrs, ArrayMerge.removeDuplicates(duplicatedArrs));
+    }
 }
