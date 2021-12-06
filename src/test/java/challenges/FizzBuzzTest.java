@@ -14,6 +14,7 @@ public class FizzBuzzTest {
     public void fizzTest(){
         //String[] testArr = {"FizzBuzz","1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz", "11", "Fizz", "13", "14", "FizzBuzz"};
         assertEquals("Buzz", fizzBuzz.fizzBuzz()[400]);
+        assertEquals("FizzBuzz", fizzBuzz.fizzBuzz()[150]);
 
     }
 }

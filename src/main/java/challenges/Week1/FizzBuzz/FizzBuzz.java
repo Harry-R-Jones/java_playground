@@ -21,15 +21,8 @@ public class FizzBuzz {
      * @return isDivisible Whether or not the number is wholly divisible by the other
      */
     public boolean divisibleBy(int testSubject, int divider){
-        //Assume not divisible
-        boolean isDivisible = false;
 
-        //If divisible, update isDivisible
-        if(testSubject % divider == 0){
-            isDivisible = true;
-        }
-
-        return isDivisible;
+        return (testSubject % divider == 0);
     }
 
     /**
@@ -38,13 +31,13 @@ public class FizzBuzz {
      */
     public String[] fizzBuzz(){
         //Initialise the String Array as the same size as the limit
-        String[] finalArray = new String[upperLimit];
+        String[] finalArray = new String[upperLimit + 1];
 
         //Initialise the String to store each line
         String outString;
 
         //Iterate through numbers
-        for(int i = 0; i < upperLimit; i++){
+        for(int i = 0; i <= upperLimit; i++){
 
             //Reset outString for each number's line
             outString = "";
