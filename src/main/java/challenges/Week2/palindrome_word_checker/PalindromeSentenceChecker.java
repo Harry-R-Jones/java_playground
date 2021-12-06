@@ -24,7 +24,7 @@ public class PalindromeSentenceChecker {
     public int checkPalindromesInSentence(){
         int palindromes = 0, notPalindromes = 0;
         PalindromeChecker pc = new PalindromeChecker();
-        
+
         for (String word: sentenceList) {
             if(pc.isPalindromic(word)){
                 palindromes++;
