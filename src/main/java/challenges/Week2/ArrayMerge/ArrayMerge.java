@@ -1,5 +1,7 @@
 package challenges.Week2.ArrayMerge;
 
+import challenges.Week2.BubbleSort.BubbleSort;
+
 public class ArrayMerge {
 //    Given two arrays you must merge those arrays and return them
 //    Return the array in Ascending order
@@ -21,12 +23,22 @@ public class ArrayMerge {
         return mergedArr;
     }
 
-    public static int[] sortAscending(){
-        return null;
+    public static int[] sortAscending(int[] unsortedInts){
+        return BubbleSort.bubbleSort(unsortedInts);
     }
 
-    public static int[] sortDescending(){
-        return null;
+    public static int[] sortDescending(int[] unsortedInts){
+        return reverseOrder(sortAscending(unsortedInts));
+    }
+
+    public static int[] reverseOrder(int[] oldOrder){
+        int[] newOrder = new int[oldOrder.length];
+        int counter = newOrder.length-1;
+        for (int i = 0; i < oldOrder.length; i++) {
+            newOrder[i] = oldOrder[counter];
+            counter--;
+        }
+        return newOrder;
     }
 
     public static int[] removeDuplicates(){
