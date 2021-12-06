@@ -9,7 +9,7 @@ public class BubbleSortTest {
 
     @Test
     public void bubbleSortTest(){
-        int[] jumbledInts = {999,21,352,1,1,8};
+        int[] jumbledInts = {1,1,8,21,352,999};
         int[] sortedInts = {1,1,8,21,352,999};
         assertArrayEquals(sortedInts, BubbleSort.bubbleSort(jumbledInts));
     }
