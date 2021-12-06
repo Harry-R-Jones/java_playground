@@ -2,6 +2,8 @@ package challenges.Week2.ArrayMerge;
 
 import challenges.Week2.BubbleSort.BubbleSort;
 
+import java.util.*;
+
 public class ArrayMerge {
 //    Given two arrays you must merge those arrays and return them
 //    Return the array in Ascending order
@@ -41,9 +43,24 @@ public class ArrayMerge {
         return newOrder;
     }
 
-    public static int[] removeDuplicates(){
-        return null;
+    public static int[] removeDuplicates(int[] duplicateArray){
+        Set<Integer> hashSet = new LinkedHashSet<>();
+
+        for(int n = 0; n < duplicateArray.length; n++){
+            hashSet.add(duplicateArray[n]);
+        }
+
+        Iterator<Integer> it = hashSet.iterator();
+        int counter = 0;
+        int[] newArr = new int[hashSet.size()];
+        while(it.hasNext()){
+            newArr[counter] = it.next();
+            counter++;
+        }
+        return newArr;
     }
+
+
 
 
 }
