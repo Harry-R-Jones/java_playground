@@ -3,7 +3,7 @@ package challenges.Week2.BubbleSort;
 public class BubbleSort {
 
     /**
-     * method to sort an unorddered array of ints
+     * method to sort an unordered array of ints
      * @param unsortedInts the ints to be sorted
      * @return int[] the sorted array of ints
      */
@@ -11,6 +11,8 @@ public class BubbleSort {
 
         //Assume the array begins unsorted
         boolean sorted = false;
+
+        int its = 0;
 
         //until sorted
         while (!sorted) {
@@ -20,7 +22,7 @@ public class BubbleSort {
 
             //for each integer
             for (int j = 0; j < unsortedInts.length - 1; j++) {
-
+                its++;
                 //compare with next integer
                 if (unsortedInts[j] > unsortedInts[j + 1]) {
                     //if current is larger
@@ -43,6 +45,7 @@ public class BubbleSort {
             }
         }
 
+        System.out.println(its);
         //return the sorted array
         return unsortedInts;
     }
