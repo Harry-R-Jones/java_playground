@@ -22,4 +22,11 @@ public class ArrayMergeTest {
         int[] unsortedArrs = {6,4,3,5,1,2};
         assertArrayEquals(sortedArrs, ArrayMerge.sortAscending(unsortedArrs));
     }
+
+    @Test
+    public void descendingOrderTest(){
+        int[] sortedArrs = {6,5,4,3,2,1};
+        int[] unsortedArrs = {6,4,3,5,1,2};
+        assertArrayEquals(sortedArrs, ArrayMerge.sortDescending(unsortedArrs));
+    }
 }
