@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class PalindromeSentenceChecker {
-    ArrayList<String> sentenceList = new ArrayList<>();
+    static ArrayList<String> sentenceList = new ArrayList<>();
 
     public PalindromeSentenceChecker() {
 
     }
 
-    public void setSentence(String sentence){
+    public static void setSentence(String sentence){
         int placeCounter = 0;
         for(int i = 0; i < sentence.length(); i++){
             if(sentence.charAt(i) == ' '){
@@ -21,12 +21,13 @@ public class PalindromeSentenceChecker {
         sentenceList.add(sentence.substring(placeCounter));
     }
 
-    public int checkPalindromesInSentence(){
-        int palindromes = 0, notPalindromes = 0;
-        PalindromeChecker pc = new PalindromeChecker();
+    public static int checkPalindromesInSentence(String sentence){
+        int palindromes = 0;
+        setSentence(sentence);
+//        PalindromeChecker pc = new PalindromeChecker();
 
         for (String word: sentenceList) {
-            if(pc.isPalindromic(word)){
+            if(PalindromeChecker.isPalindromic(word)){
                 palindromes++;
             }
         }

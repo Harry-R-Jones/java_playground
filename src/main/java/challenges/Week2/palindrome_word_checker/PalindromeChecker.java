@@ -6,7 +6,7 @@ public class PalindromeChecker {
 
     }
 
-    public boolean isPalindromic(String palindromeCandidate){
+    public static boolean isPalindromic(String palindromeCandidate){
         boolean isPalindrome = true;
         while(palindromeCandidate.length() > 1){
             if(palindromeCandidate.charAt(0) == palindromeCandidate.charAt(palindromeCandidate.length()-1)){
