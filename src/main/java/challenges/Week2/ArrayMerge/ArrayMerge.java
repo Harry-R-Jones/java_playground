@@ -81,8 +81,8 @@ public class ArrayMerge {
         Set<Integer> hashSet = new LinkedHashSet<>();
 
         //Add the elements from the array to the LinkedHashSet (duplicates are removed automatically)
-        for(int n = 0; n < duplicateArray.length; n++){
-            hashSet.add(duplicateArray[n]);
+        for(int n : duplicateArray){
+            hashSet.add(n);
         }
 
         //Iterate through the hashset
