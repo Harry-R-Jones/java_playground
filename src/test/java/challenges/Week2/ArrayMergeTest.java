@@ -15,4 +15,11 @@ public class ArrayMergeTest {
 
         assertArrayEquals(mergedArrs, ArrayMerge.mergeTwoArrays(arr1,arr2));
     }
+
+    @Test
+    public void ascendingOrderTest(){
+        int[] sortedArrs = {1,2,3,4,5,6};
+        int[] unsortedArrs = {6,4,3,5,1,2};
+        assertArrayEquals(sortedArrs, ArrayMerge.sortAscending(unsortedArrs));
+    }
 }
