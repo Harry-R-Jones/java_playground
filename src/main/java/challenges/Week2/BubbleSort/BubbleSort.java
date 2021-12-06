@@ -45,7 +45,7 @@ public class BubbleSort {
             }
         }
 
-        System.out.println(its);
+//        System.out.println(its);
         //return the sorted array
         return unsortedInts;
     }
