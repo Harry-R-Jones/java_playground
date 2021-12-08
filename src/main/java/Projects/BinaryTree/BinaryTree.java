@@ -43,11 +43,11 @@ public class BinaryTree implements BinaryTreeI{
 
         if(!node.isRightChildEmpty()){
             //If there is a right child count elements below it(including it)
-            count = count + getNumberOfElements(node.getRightChild());
+            count += getNumberOfElements(node.getRightChild());
         }
         if(!node.isLeftChildEmpty()){
             //If there is a left child count elements below it(including it)
-            count = count + getNumberOfElements(node.getLeftChild());
+            count += getNumberOfElements(node.getLeftChild());
         }
 
         return count;
