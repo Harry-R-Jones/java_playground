@@ -32,7 +32,6 @@ public class BinaryTreeTest {
         BinaryTree bT = new BinaryTree(12);
         bT.addElement(5);
         bT.addElement(19);
-        bT.addElement(4);
 
         assertEquals(true, bT.findElement(12));
         assertEquals(true, bT.findElement(5));
